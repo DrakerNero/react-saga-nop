@@ -1,0 +1,19 @@
+{
+  "name": "react-saga-nop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pongnarin/react-saga-nop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pongnarin/react-saga-nop/issues"
+  },
+  "homepage": "https://github.com/Pongnarin/react-saga-nop#readme"
+}
