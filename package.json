@@ -1,5 +1,5 @@
 {
-  "name": "ittp-core",
+  "name": "react-saga-nop",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LarngearTech/ittp-core.git"
+    "url": "git+https://github.com/Pongnarin/react-saga-nop.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LarngearTech/ittp-core/issues"
+    "url": "https://github.com/Pongnarin/react-saga-nop/issues"
   },
-  "homepage": "https://github.com/LarngearTech/ittp-core/readme",
+  "homepage": "https://github.com/Pongnarin/react-saga-nop/readme",
   "dependencies": {
     "bulma": "^0.2.3",
     "classnames": "^2.2.5",
