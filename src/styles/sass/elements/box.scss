@@ -1,0 +1,14 @@
+.box.is-center {
+  text-align: center;
+  img {
+    display: block;
+    margin: auto;
+  }
+}
+
+.box {
+  img.task-image {
+    width: 64px;
+    margin-bottom: 10px;
+  }
+}

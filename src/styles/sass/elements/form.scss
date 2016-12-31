@@ -1,0 +1,14 @@
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.control.is-light-label {
+  label {
+    font-weight: 300;
+  }
+}

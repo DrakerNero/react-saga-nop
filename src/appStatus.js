@@ -1,0 +1,5 @@
+export const FILLFORM = 'fillform'
+export const WAIT_VERIFY = 'wait-verify'
+export const WAIT_ANALYST = 'wait-analyst'
+export const WAIT_APPROVE = 'wait-approve'
+export const APPROVED = 'approved'

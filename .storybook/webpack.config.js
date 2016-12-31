@@ -1,13 +1,11 @@
 const path = require('path')
 const webpack = require('webpack') // eslint-disable-line
 const HtmlWebpackPlugin = require('html-webpack-plugin') // eslint-disable-line
-
 module.exports = {
   devtool: 'eval-source-map',
   entry: [
-    'react-hot-loader/patch',
-    'webpack-hot-middleware/client',
-    'babel-polyfill', // To use ES6 generator
+    'webpack-dev-server/client?http://localhost:8080',
+    'webpack/hot/only-dev-server',
     path.resolve('src/index.js'),
   ],
   output: {
@@ -19,7 +17,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loader: 'babel?cacheDirectory',
+        loader: 'babel!webpack-module-hot-accept', // or 'babel-loader'
       },
       {
         test: /\.css$/,
@@ -61,18 +59,14 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({
-      template: path.resolve('./src/index.html'),
-    }),
   ],
   resolve: {
     root: [
+      // Since webpack will be called from root directory
+      // This will return absolute path of ittp-core not ittp-core/.storybook
       path.resolve('./'),
       path.resolve('./src'),
     ],
-  },
-  externals: {
-    fs: '{}',
   },
   devServer: {
     hot: true,

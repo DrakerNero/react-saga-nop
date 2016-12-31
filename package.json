@@ -1,43 +1,78 @@
 {
-  "name": "react-saga-nop",
+  "name": "ittp-core",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "cd ./node_modules/react-router-redux && yarn && npm run build-lib",
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "dev": "node server.js",
+    "lint": "eslint .",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pongnarin/react-saga-nop.git"
+    "url": "git+https://github.com/LarngearTech/ittp-core.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Pongnarin/react-saga-nop/issues"
+    "url": "https://github.com/LarngearTech/ittp-core/issues"
   },
-  "homepage": "https://github.com/Pongnarin/react-saga-nop#readme",
+  "homepage": "https://github.com/LarngearTech/ittp-core/readme",
   "dependencies": {
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "react-redux": "^5.0.1",
-    "redux": "^3.6.0"
+    "bulma": "^0.2.3",
+    "classnames": "^2.2.5",
+    "connected-react-router": "^1.0.0-alpha.5",
+    "griddle-react": "^0.7.1",
+    "history": "^4.0",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-helmet": "^3.2.2",
+    "react-redux": "^4.4.6",
+    "react-router": "^4.0.0-alpha",
+    "redux": "^3.6.0",
+    "redux-form": "^6.2.0",
+    "redux-form-schema": "^0.0.3",
+    "redux-saga": "^0.13.0",
+    "redux-ui": "^0.0.15",
+    "reselect": "^2.5.4"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-core": "^6.21.0",
-    "babel-loader": "^6.2.10",
-    "babel-polyfill": "^6.20.0",
+    "@kadira/storybook": "^2.21.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-polyfill": "^6.16.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-1": "^6.16.0",
-    "babel-register": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "chai": "^3.5.0",
     "compression": "^1.6.2",
+    "css-loader": "^0.25.0",
+    "enzyme": "^2.6.0",
+    "eslint": "^3.11.0",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-import-resolver-webpack": "^0.7.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-react": "^6.7.1",
     "express": "^4.14.0",
-    "path": "^0.12.7",
+    "fetch-mock": "^5.5.0",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
+    "mocha": "^3.2.0",
+    "node-sass": "^3.13.0",
     "react-hot-loader": "next",
-    "webpack": "^1.14.0",
-    "webpack-dev-middleware": "^1.9.0",
-    "webpack-hot-middleware": "^2.14.0",
-    "webpack-server": "^0.1.2"
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.13.2"
   }
 }
