@@ -1,4 +1,4 @@
-const API_SERVER = 'http://api.ittp.co.th'
+const API_SERVER = 'http://localhost:3000/'
 
 const getJSON = url => (
   fetch(url)
