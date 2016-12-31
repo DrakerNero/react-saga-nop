@@ -1,1 +1,1 @@
-# ittp-core
+# Setup project
